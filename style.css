@@ -1,0 +1,203 @@
+/* font-family: 'Spartan', sans-serif; */
+
+body{
+    font-family: 'Spartan', sans-serif;
+    background-image: url(images/bg-pattern-top-mobile.svg),url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat,no-repeat;
+        background-position: left top, right bottom;
+}
+
+.social_card{
+    /* border: 2px solid yellow; */
+    margin: 0 auto;
+    padding-top: 20px;
+    width:95%;
+}
+
+.heading_section{
+    width: 95%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+.heading_title{
+    /* border: 2px solid green; */
+    text-align: center;
+    line-height: 1em;
+    color:hsl(300, 43%, 22%);
+    letter-spacing: -1.7px;
+}
+
+.heading_details{
+    /* border: 2px solid green; */
+    font-size: 0.9em;
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+}
+
+.rating_box{
+    /* border: 2px solid red; */
+   font-size: 0.5em;
+   margin-top: 10px;
+   background:  hsl(300, 24%, 96%);
+   padding: 0.2em 0;
+   color: hsl(300, 43%, 22%);;
+   border-radius: 10px;
+   
+}
+
+.rating_logo{
+    margin-top: 10px;
+    word-spacing: 5px;
+}
+
+.rating_section{
+    text-align: center;
+}
+
+.box_section{
+    /* border: 2px solid red; */
+    margin-top: 2em;
+}
+
+.profile_bio{
+    /* border: 2px solid yellow; */
+    background:hsl(300, 43%, 22%);
+    padding: 25px 20px 15px 25px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.profile_box--flex{
+    display: flex;
+    
+    /* border: 2px solid red; */
+    color: white;
+    
+}
+
+.profile_info{
+    font-weight: 400;
+    color: hsl(333, 80%, 67%);
+}
+
+.profile_box--flex h1{
+    font-size: 0.6em;
+}
+
+
+.profile_flex{
+   line-height: 0.5em;
+   margin-left: 1.2em;
+}
+
+.profile_icon{
+    width: 30px;
+    height: 100%;
+    border-radius: 100%;
+    align-self: center;
+}
+
+.profile_desc{
+    color: hsl(300, 24%, 96%);
+    font-size: 0.7em;
+    font-weight: 400;
+    line-height:1.7em;
+}
+
+.attribution{
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 2em;
+    color: hsl(300, 43%, 22%);
+}
+
+.attribution a{
+    color: hsl(333, 80%, 67%);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/* FOR DESKTOP SCREENS */
+@media (min-width:600px){
+    body{
+        background-image: url(images/bg-pattern-top-desktop.svg),url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat,no-repeat;
+        background-position: left top, right bottom;
+    }
+
+   
+    .social_card{
+        width: 85%;
+        padding-top: 8em;
+        /* border:2px solid red; */
+    }
+    .row_flex{
+        /* border: 2px solid red; */
+        display: flex;
+       
+    }
+    .heading_section{
+        width: 35%;
+        margin: 0;
+        
+    }
+    .heading_title{
+        margin-top: 0;
+        font-size: 2.5em;
+    }
+    
+    .heading_title,.heading_details{
+        text-align: left;
+       /* border: 2px solid red; */
+      
+    }
+
+    .rating_section{
+        /* border: 2px solid yellow; */
+        flex-grow: 1;
+    }
+    .rating_box{
+        display: flex;
+        width:55%;
+        padding:5px 0 5px 20px;
+        align-items: center;
+        margin:1.5em 0 0 20em;
+    }
+    .box_two{
+        margin-left:25em ;
+    }
+    .box_three{
+        margin-left: 30em;
+    }
+    .rating_logo{
+        margin-top: 0;   
+    }
+    .rating_feedback{
+        padding-left: 3em;
+    }
+
+   .box_section{
+       display: flex;
+       /* border: 2px solid red; */
+      
+       
+   }
+   .profile_card + .profile_card{
+       /* border:2px solid yellow; */
+       padding-top: 0.5em;
+   }
+
+   .card_three{
+       margin-top:0.5em;
+   }
+   .profile_bio{
+       margin-top: 0;
+       border-radius: 5px;
+       width: 70%;
+   }
+   .attribution{
+       margin-top: 5em;
+   }
+  
+}
